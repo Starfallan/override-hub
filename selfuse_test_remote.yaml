@@ -1,3 +1,11 @@
+
+##自修改:添加了
+### 1.自动选择新增其他地区
+### 2.自动选择中自动排除高级节点,防止浪费流量
+
+
+##以下是原作者的介绍,来源https://github.com/Seameee/override-hub/blob/main/selfuse_test_remote.yaml
+
 ### 参考自https://github.com/yyhhyyyyyy/selfproxy
 ### 全局配置
 mixed-port: 7897
@@ -95,7 +103,7 @@ proxy-groups:
 
   # 手动/自动
   - {name: 手动选择, <<: *Select, filter: *FilterAll, icon: https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Static.png}
-  - {name: 自动选择, type: select, proxies: [香港节点, 日本节点, 韩国节点, 狮城节点, 美国节点, 英国节点, 法国节点, 德国节点, 台湾节点], url: https://www.apple.com/library/test/success.html, icon: https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Urltest.png}
+  - {name: 自动选择, type: select, proxies: [香港节点, 日本节点, 韩国节点, 狮城节点, 美国节点, 英国节点, 法国节点, 德国节点, 台湾节点, 其他节点], url: https://www.apple.com/library/test/success.html, exclude-filter: *FilterAdvance, icon: https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Urltest.png}
 
   # 特殊分组
   - {name: 省流选择, <<: *Auto, filter: *FilterSave, icon: https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Urltest.png}
@@ -121,6 +129,7 @@ proxy-groups:
   - {name: 法国节点, <<: *Auto, filter: *FilterFR, icon: https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/FR.png}
   - {name: 德国节点, <<: *Auto, filter: *FilterDE, icon: https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/DE.png}
   - {name: 台湾节点, <<: *Auto, filter: *FilterTW, icon: https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/CN.png}
+  - {name: 其他节点, <<: *Auto, filter: *FilterOthers, icon: https://testingcf.jsdelivr.net/gh/Orz-3/mini@master/Color/Global.png}
 
 ### 规则配置
 RuleSet_classical: &RuleSet_classical {type: http, behavior: classical, interval: 43200, format: text, proxy: 节点选择}
