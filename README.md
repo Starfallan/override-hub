@@ -15,7 +15,7 @@
 
   - [selfuse_test_remote.yaml](https://raw.githubusercontent.com/Seameee/override-hub/refs/heads/main/selfuse_test_remote.yaml) 和 [selfuse_test_local.yaml](https://raw.githubusercontent.com/Seameee/override-hub/refs/heads/main/selfuse_test_local.yaml),之前的配置已不再更新,请使用这两个
  
-  **配置2**
+**配置2**
   -  额外修改了[powerfullz](https://github.com/powerfullz/override-rules)佬的JS覆写配置，自修改添加了自动选择组别，并自动排除高倍率节点（防止smart选到高倍率节点）
   目前正在使用，配合Smart内核还可以
   自行复制或者下载convert.js即可
