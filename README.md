@@ -5,6 +5,7 @@
 ## 使用指南
 
 ### mihomo 配置
+ **配置1**
 - 本配置已在 sub-store 中测试通过，mihomo-party/sparkle 请自行测试
 - 配置文件：
   ~~- [selfuse_dns.yaml](https://raw.githubusercontent.com/Seameee/override-hub/refs/heads/main/selfuse_dns.yaml) - 普通用户使用~~
@@ -13,6 +14,12 @@
     ~~- 需自行修改为已配置 DNS 分流的 AdGuardHome DNS / MosDNS 地址~~
 
   - [selfuse_test_remote.yaml](https://raw.githubusercontent.com/Seameee/override-hub/refs/heads/main/selfuse_test_remote.yaml) 和 [selfuse_test_local.yaml](https://raw.githubusercontent.com/Seameee/override-hub/refs/heads/main/selfuse_test_local.yaml),之前的配置已不再更新,请使用这两个
+ 
+   **配置2**
+  -  额外修改了[powerfullz](https://github.com/powerfullz/override-rules)佬的JS覆写配置，自修改添加了自动选择组别，并自动排除高倍率节点（防止smart选到高倍率节点）
+  目前正在使用，配合Smart内核还可以
+  自行复制或者下载convert.js即可
+
 
 ### sub-store 懒人配置
 预置了 sub-store 的懒人配置，导入后添加你的订阅就能使用，推荐配合查看[图文版教程](https://linux.do/t/topic/660141/86)
